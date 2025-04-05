@@ -1,6 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import { getFirestore } from "firebase/firestore";
 import { getAuth , GoogleAuthProvider } from "firebase/auth";
 import firebase from "firebase/compat/app";
 // TODO: Add SDKs for Firebase products that you want to use
@@ -9,13 +10,13 @@ import firebase from "firebase/compat/app";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBo7LC6Z3rvbop6swfva1RNYV6WFkQy92U",
-  authDomain: "chatapp-25bf2.firebaseapp.com",
-  projectId: "chatapp-25bf2",
-  storageBucket: "chatapp-25bf2.firebasestorage.app",
-  messagingSenderId: "802870015087",
-  appId: "1:802870015087:web:0652a95f036cc68f59499a",
-  measurementId: "G-SW5GVLMN1Z"
+  apiKey:process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain:process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket:  process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId:  process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId:  process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
@@ -23,3 +24,4 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 export const auth=getAuth(app);
 export const provider=new GoogleAuthProvider();
+export const db=getFirestore(app);
