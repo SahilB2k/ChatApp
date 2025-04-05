@@ -6,6 +6,7 @@ import Auth from "./components/Auth"
 import Cookies from "universal-cookie"
 import Chat from "./components/Chat"
 import { auth } from "./firebase-config.js"
+import ErrorBoundary from "./components/ErrorBoundry.js"
 
 const cookies = new Cookies()
 
@@ -47,6 +48,7 @@ function App() {
   }
 
   return (
+    <ErrorBoundary>
     <div className="app">
       {room ? (
         <Chat room={room} />
@@ -56,8 +58,8 @@ function App() {
           
           <div className="room-header">
             <h2>Join a Chat Room</h2>
-            <p className="welcome-message">
-              Hello, <strong>{userName}</strong>! Choose a room to start chatting.
+            <p className="welcome-message"> 
+              Hello, <strong style={{ fontStyle: "normal", fontSize: "21px", color:"#4f4fbc"  }}>{userName}</strong> Choose a room to start chatting.
             </p>
           </div>
 
@@ -188,6 +190,7 @@ function App() {
         </div>
       )}
     </div>
+    </ErrorBoundary>
   )
 }
 
