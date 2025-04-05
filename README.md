@@ -1,6 +1,6 @@
 # ChatApp
 
-This repository contains a simple chat application built using React and Firebase.
+This repository contains a simple chat application built using React and Firebase(Authentication and Database).
 
 ## Overview
 
