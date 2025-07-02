@@ -85,4 +85,4 @@ This project implements a basic real-time chat application. Users can send and r
 Contributions are welcome! Please feel free to submit pull requests or open issues for any improvements or bug fixes.
 
 
-![Demo Screenshot](images/login.png)
+![Demo Screenshot](images/login.jpg)
