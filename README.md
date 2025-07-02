@@ -86,3 +86,4 @@ Contributions are welcome! Please feel free to submit pull requests or open issu
 
 
 ![Demo Screenshot](images/login.jpg)
+![Demo Screenshot](images/home.jpg)
