@@ -85,5 +85,9 @@ This project implements a basic real-time chat application. Users can send and r
 Contributions are welcome! Please feel free to submit pull requests or open issues for any improvements or bug fixes.
 
 
-![Demo Screenshot](images/login.jpg)
-![Demo Screenshot](images/home.jpg)
+<div align="center">
+  <img src="./images/home.jpg" alt="Deleting Endpoints" width="700" >
+  <img src="./images/login.jpg" alt="Deleting Endpoints" width="700" >
+  
+  <p><em>Home screen</em></p>
+</div>
